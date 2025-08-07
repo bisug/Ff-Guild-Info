@@ -94,7 +94,7 @@ def convert_timestamp(release_time):
 jwt_token = None
 async def get_jwt_token():
     global jwt_token
-    url = "https://projects-fox-x-get-jwt.vercel.app/get?uid=3763606630&password=7FF33285F290DDB97D9A31010DCAA10C2021A03F27C4188A2F6ABA418426527C"
+    url = "https://free-fire-jwt-sumi.vercel.app/token?uid=3824584609&password=0290B4F2D8AB870BD11A845B214D9BEC9883C573877A9F4D43B47199672404BD"
     try:
         async with httpx.AsyncClient() as client:
             response = await client.get(url)
