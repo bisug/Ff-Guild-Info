@@ -25,7 +25,7 @@ async def get_jwt_token():
         response = await client.get(url)
         if response.status_code == 200:
             data = response.json()
-            jwt_token = data.get("token")
+            token = data.get("token")
 
 @app.on_event("startup")
 async def startup_event():
