@@ -53,7 +53,7 @@ async def get_clan_info(request: Request):
 
     url = "https://clientbp.ggblueshark.com/GetClanInfoByClanID"
     headers = {
-        "Authorization": f"Bearer {jwt_token}",
+        "Authorization": f"Bearer {token}",
         "X-Unity-Version": "2018.4.11f1",
         "X-GA": "v1 1",
         "ReleaseVersion": "ob50",
